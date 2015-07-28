@@ -158,7 +158,7 @@ else {
 	});
 	$("#logo").click(function(){
 		if($("#main_menu_steady").css("left").replace(/[^-\d\.]/g, '') == 0 ){
-			$("#main_menu_steady").attr("id","main_menu");
+			
 			$(".btn").fadeOut(300,function(){
 				$(".btn").css({
 					width:180,
@@ -177,15 +177,16 @@ else {
 								width:400,
 								height:400
 							},300);
-							$("#main_menu").animate({
+							$("#main_menu, #main_menu_steady").animate({
 								left:$mx,
 								top:$my,
 								height:400,
 								width:400,
 							},300,function(){
+								$("#main_menu_steady").attr("id","main_menu");
 								$(".btn").fadeIn(300);
+								});
 						});
-					});
 				});
 			});
 		};
