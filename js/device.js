@@ -27,9 +27,3 @@ for (var i = 0; i < mobiles.length; i++) {
 	break;
 	}
 }
-if ( isMobile == true ) {
-	$("head").append('<link rel="stylesheet" type="text/css" href="css/style_m.css">');
-}
-else {
-	$("head").append('<link rel="stylesheet" type="text/css" href="css/style_d.css">');
-}
