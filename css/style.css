@@ -132,7 +132,7 @@ img {
 
 .page {
     min-height: calc(100% - 50px);
-    width: calc(100% - 50px);
+    width: 100%;
     min-width: 270px;
     position: absolute;
     background: rgba(120,120,120,0.5);
@@ -151,6 +151,7 @@ img {
     font-family: "微軟正黑體","Helvetica Neue",Helvetica,Arial,sans-serif,"Apple LiGothic","Microsoft JhengHei";
     font-size: 16px;
     line-height: 22px;
+    box-sizing: border-box;
 }
 
     .page:after {
