@@ -1,113 +1,188 @@
 ﻿<!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-<title>JZ's Portfoilo</title>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/device.js"></script>
-<link rel="stylesheet" type="text/css" href="css/normalize.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+    <title>JZ's Portfoilo</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
-
-<body onLoad="ini()">
-<div id="bd">
-    <div id="wrap">
-        <nav id="menu">
-            <div class="ctr btn" id="left"><div></div></div>
-            <div class="ctr_p btn" id="prev"><div></div></div>
-            <div id="btn_wrap">
-                <div id="btn_sli">
-                    <div class="menu_btn btn">
-                    簡介
-                    </div>
-                    <div class="menu_btn btn">
-                    經驗
-                    </div>
-                    <div class="menu_btn btn">
-                    GitHub
-                    </div>
-                </div>
-            </div>
-            <div class="ctr btn" id="right"><div></div></div>
-            <div class="ctr_p btn" id="next"><div></div></div>
-        </nav>
-        <div id="p_wrap">
-            <div class="page">
-                <img src="images/head.jpg" width="300"><br>
-                傳播出身的前端工程師、專業的不專業Coffee Brewer<br><br>
-                Name：林晉澤(JZ)<br>
-                Contact me：<a href="mailto:jinntser@gmail.com">jinntser@gmail.com</a><br>
-                Web-page：<a href="http://jinntser.github.io/portfolio/" target="_blank">請點我</a><br><br>
-
-                銘傳大學傳播管理學系學士(2015)<br><br>
-        
-                銘傳大學傳播管理學系學士論文(指導教授：<a href="http://120.96.128.219" target="_blank">吳毓傑博士</a>)<br>
-                －"行動式交通教育APP輔助教學系統"<br><br>
-                
-                The 15th IEEE International Conference on Advanced Learning Technologies - ICALT2015<br>
-                －"A Boosting Algorithm for Auto-Generating Quiz for Traffic Education"<br><br><br>
-            </div>
-            <div class="page">
-                <h2>2013/11 ~ 2015/01 (產學合作案)</h2>
-                <p>
-                    [1] 艾菲台灣 (切版及功能)<br>
-                    [2] 趣遊台灣 (切版及功能)<br>
-                    [3] 米龍申請金氏世界紀錄 (切版及功能)<br>
-                    [4] 金都餐飲集團 - 金都餐廳 (切版及功能)
-                </p>
-                <h2>2015</h2>
-                <p>
-                    [1] BMW 3系列40週年 傳奇再現 預約賞車活動頁 (切版及效果)<br>
-                    [2] Dunkin’ Donut轉轉樂 抽獎活動頁 (切版及效果)
-                </p>
-                <h2>2015 ~ 2016</h2>
-                <p>
-                    [1] 生活童話 alifetale(切版及效果)
-                </p>
-                <h2>2016</h2>
-                <p>
-                    [1] LOF樂福太陽能 (切版及效果)<br>
-                    [2] 來一客音樂卡片活動 (頁面功能及效果)<br>
-                    [3] Infinity無限基金 (圖表功能製作)<br>
-                    [4] 勵馨基金會眼淚香水索取申請頁 (切版及效果)<br>
-                    [5] Farlala (版面修正,部分特殊功能)<br>
-                    [6] WorldiBuy手機板 (套版及部分功能)<br>
-                    [7] ChicChicGirl (套版,功能調整)<br>
-                    [8] FFLIVES (一般/店家會員功能頁面切版及功能,全站部分特殊功能)<br>
-                    [9] oneday小壹日 (切版及效果等各種前端)<br>
-                    [10] färska來一客音樂卡片活動 (切版及效果,客製化功能)<br>
-                    [11] REALSHOW真享秀 影音播放器
-                </p>
-                <h2>2017</h2>
-                <p>
-                    [1] OriginB2B (樣式表塑身及界面修正,部分效果及功能等)<br>
-                    [2] Lovugo樂芙購 (套版及版面調整,圖片上傳壓浮水印功能)<br>
-                    [3] littlegirl莉朵花藝 改版(切版)<br>
-                    [4] oneday小壹日 (RWD化)<br>
-                    [5] färska (RWD化,新增效果及功能)<br>
-                    [6] akap (套版及部分功能,超商取貨串接)
-                </p>
-            </div>
-            <div class="page">
-            	<h2>Github上的一些小東西</h2>
-                <p>
-                    [1] <a href="http://jinntser.github.io/JZlider/" target="_blank">JZlider</a>, 正式demo請見<a href="https://www.farska-tw.com/" target="_blank">這裡</a><br>
-                    [2] <a href="http://jinntser.github.io/JZlayer/" target="_blank">整合騰訊影音及youtube的播放器JZlayer</a>, 正式demo請見<a href="https://www.realshow.com.tw/portal_music/channel_list/465" target="_blank">這裡(左方[播放全部影片])</a><br>
-                    [3] <a href="http://jinntser.github.io/widgets/float-widget/" target="_blank">可拖移的iPhone按鈕(偽)</a><br>
-                    [4] <a href="http://jinntser.github.io/slashBlocks" target="_blank">斜切版面(僅用色塊demo)</a><br>
-                    [5] <a href="http://jinntser.github.io/GRPlayer" target="_blank">黑膠播放器(因版權問題無音檔)</a><br>
-                    [6] <a href="http://jinntser.github.io/3d_flip/" target="_blank">3D Slide頁面(本頁版型)</a><br>
-                    [7] <a href="http://jinntser.github.io/painter/" target="_blank">Buggy的繪圖板</a><br>
-                    [8] <a href="http://jinntser.github.io/Orientation/" target="_blank">陀螺儀旋轉物件</a><br>
-                    [9] <a href="http://jinntser.github.io/Touch-JQ-CSS3D/" target="_blank">觸控旋轉物件</a><br>
-                    [10] <a href="http://jinntser.github.io/floatGallery/" target="_blank">不知道怎麼命名的相簿</a><br>
-                </p>
-            </div>
-            <div class="clearfix"></div>
+<body>
+<header>
+    <div class="wrap-outer">
+        <div class="wrap-inner">
+            <h1 class="logo"><a href="/" title="logo">JZ's <span>portfolio</span></a></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about" data-text="About">About</a></li>
+                    <li><a href="#exp" data-text="Experiences">Experiences</a></li>
+                    <li><a href="#github" data-text="Github Pages">Github Pages</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
-</div>
-    <script type="text/javascript" src="js/e.js"></script>
+</header>
+<main>
+    <div class="wrap-outer">
+        <div class="wrap-inner">
+            <article id="about">
+                <figure>
+                    <img src="images/head.jpg" width="300">
+                    <p class="quote">
+                        咖啡，不是能喝就好；<br>&emsp;&emsp;&emsp;&emsp;程式，不是能動就好。
+                    </p>
+                </figure>
+                <p>
+                    - 傳播出身的前端工程師、專業的不專業Coffee Brewer<br>
+                    Name：林晉澤(JZ)<br>
+                    Contact me：<a href="mailto:jinntser@gmail.com">jinntser@gmail.com</a><br>
+                    Github：<a href="https://github.com/jinntser" target="_blank">請點我</a>
+                </p>
+                <p>
+                    銘傳大學傳播管理學系學士(2015)<br><br>
+                    銘傳大學傳播管理學系學士論文(指導教授：吳毓傑博士)<br>
+                    －"行動式交通教育APP輔助教學系統"<br><br>
+                    The 15th IEEE International Conference on Advanced Learning Technologies - ICALT2015<br>
+                    －"A Boosting Algorithm for Auto-Generating Quiz for Traffic Education" <a
+                        href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&arnumber=7265267&punumber%3D7262584%26filter%3DAND%28p_IS_Number%3A7265235%29%26pageNumber%3D2"
+                        target="_blank">連結</a>
+                </p>
+            </article>
+            <article id="exp">
+                <h3>2013/11 ~ 2015/01 <span class="notice">產學合作案 (畫設計稿以外全包)</span></h3>
+                <ol class="count-list">
+                    <li>
+                        艾菲台灣
+                    </li>
+                    <li>
+                        趣遊台灣
+                    </li>
+                    <li>
+                        米龍申請金氏世界紀錄
+                    </li>
+                    <li>
+                        金都餐飲集團 - 金都餐廳
+                    </li>
+                </ol>
+                <h3>2015末</h3>
+                <ol class="count-list">
+                    <li>
+                        BMW 3系列40週年 傳奇再現 預約賞車活動頁
+                    </li>
+                    <li>
+                        Dunkin’ Donut轉轉樂 抽獎活動頁
+                    </li>
+                    <li>
+                        生活童話 alifetale
+                    </li>
+                </ol>
+                <h3>2016</h3>
+                <ol class="count-list">
+                    <li>
+                        LOF樂福太陽能 <span class="notice">前端</span>
+                    </li>
+                    <li>
+                        來一客音樂卡片活動 <span class="notice">頁面功能及效果</span>
+                    </li>
+                    <li>
+                        Infinity無限基金 圖表功能製作 <span class="notice">D3.js</span>
+                    </li>
+                    <li>
+                        勵馨基金會眼淚香水索取申請頁 <span class="notice">前端</span>
+                    </li>
+                    <li>
+                        Farlala <span class="notice">版面修正、部分特殊功能</span>
+                    </li>
+                    <li>
+                        WorldiBuy手機板 <span class="notice">套版及部分功能</span>
+                    </li>
+                    <li>
+                        ChicChicGirl <span class="notice">套版、功能調整</span>
+                    </li>
+                    <li>
+                        FFLIVES (一般/店家會員功能頁面切版及功能,全站部分特殊功能)
+                    </li>
+                    <li>
+                        oneday小壹日 <span class="notice">前端</span>
+                    </li>
+                    <li>
+                        färska <span class="notice">前端</span>
+                    </li>
+                    <li>
+                        REALSHOW真享秀 影音播放器
+                    </li>
+                </ol>
+                <h3>2017</h3>
+                <ol class="count-list">
+                    <li>
+                        OriginB2B <span class="notice">版面及效能優化、部分效果及功能等</span>
+                    </li>
+                    <li>
+                        Lovugo樂芙購 <span class="notice">套版及版面調整、圖片上傳壓浮水印功能(canvas)</span>
+                    </li>
+                    <li>
+                        littlegirl莉朵花藝 改版 <span class="notice">切版</span>
+                    </li>
+                    <li>
+                        oneday小壹日 <span class="notice">RWD</span>
+                    </li>
+                    <li>
+                        färska <span class="notice">RWD、新增效果及功能</span>
+                    </li>
+                    <li>
+                        akap <span class="notice">套版及部分功能、超商取貨串接</span>
+                    </li>
+                </ol>
+            </article>
+            <article id="github">
+                <h3>Github上的一些小東西</h3>
+                <ol class="count-list">
+                    <li>
+                        <a href="http://jinntser.github.io/JZlider/" target="_blank">JZlider</a>, 正式demo請見<a
+                            href="https://www.farska-tw.com/" target="_blank">這裡</a>
+                    </li>
+                    <li>
+                        <a href="http://jinntser.github.io/JZlayer/" target="_blank">整合騰訊影音及youtube的播放器JZlayer</a>,
+                        正式demo請見<a href="https://www.realshow.com.tw/portal_music/channel_list/465"
+                                   target="_blank">這裡</a> <span class="notice">(左方[播放全部影片])</span>
+                    </li>
+                    <li>
+                        <a href="http://jinntser.github.io/widgets/float-widget/" target="_blank">可拖移的iPhone按鈕(偽)</a>
+                    </li>
+                    <li>
+                        <a href="http://jinntser.github.io/GRPlayer" target="_blank">黑膠播放器</a> <span class="notice">因版權問題不附音檔</span>
+                    </li>
+                    <li>
+                        <a href="http://jinntser.github.io/3d_flip/" target="_blank">3D Slide頁面</a>
+                    </li>
+                    <li>
+                        <a href="http://jinntser.github.io/painter/" target="_blank">Buggy的繪圖板</a>
+                    </li>
+                    <li>
+                        <a href="http://jinntser.github.io/slashBlocks" target="_blank">設參數自動產生斜切版面</a> <span
+                            class="notice">僅用色塊demo</span>
+                    </li>
+                </ol>
+            </article>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="wrap-outer">
+        <div class="wrap-inner">
+            <p>
+                ver. 2017.12
+            </p>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="js/e.js"></script>
 </body>
 </html>
