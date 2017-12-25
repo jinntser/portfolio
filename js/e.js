@@ -20,4 +20,14 @@ window.addEventListener('load', function () {
             document.querySelector(_target).scrollIntoView({block: 'start', behavior: 'smooth'});
         });
     });
+
+    let _mainMenu = document.querySelector('.main-nav');
+    document.querySelectorAll('.menu-opener')[0].addEventListener('touchstart', function () {
+        _mainMenu.classList.toggle('opened');
+    });
+    window.addEventListener('scroll', function () {
+        if (_mainMenu.classList.contains('opened')){
+            _mainMenu.classList.remove('opened');
+        }
+    })
 });
