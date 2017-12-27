@@ -1,5 +1,5 @@
 html, body {
-    background-color: #fcfcfc;
+    background-color: #d8d8d8;
     font-family: '微軟正黑體';
     font-size: 15px;
     line-height: 1.2;
@@ -9,7 +9,6 @@ html, body {
 
 body {
     position: relative;
-    background-color: #d8d8d8;
 }
 
 * {
@@ -149,6 +148,13 @@ footer:after,
     color: #e89213;
     font-size: 1.25rem;
     font-style: italic;
+}
+
+.code-box{
+    border: 1px solid #ccc;
+    background-color: #dff0d8;
+    margin-bottom: 30px;
+    padding: 15px;
 }
 
 .quote:before, .quote:after {
