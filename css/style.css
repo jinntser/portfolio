@@ -179,6 +179,27 @@ ol.count-list li:before {
     content: '[' counter(list) '] ';
 }
 
+ol.count-list li .title {
+    display: inline-block;
+    margin: 0;
+    font-size: 1rem;
+}
+
+ol.count-list li.offline .title {
+    text-decoration: line-through;
+}
+
+ol.count-list li.offline:after {
+    position: relative;
+    display: inline-block;
+    padding: .1em .3em;
+    border-radius: 4px;
+    background-color: #bb0000;
+    color: #eeeeee;
+    font-size: .8rem;
+    content: 'offline';
+}
+
 .notice {
     color: #999;
     font-size: .8rem;
