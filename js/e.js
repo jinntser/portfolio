@@ -8,11 +8,14 @@
 
 window.addEventListener('load', function () {
     let _links = document.querySelectorAll('a'),
-        _anchorLinks = Array.filter(_links, function (obj) {
-            if (obj.getAttribute('href').match(/(#)/)) {
-                return true;
-            }
-        });
+        _anchorLinks = [];
+
+    _links.forEach(obj => {
+        if (obj.getAttribute('href').match(/(#)/)) {
+            _anchorLinks.push(obj);
+        }
+    });
+
     _anchorLinks.forEach(function (obj) {
         obj.addEventListener('click', function (e) {
             e.preventDefault();
